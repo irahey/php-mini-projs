@@ -23,7 +23,7 @@ function read_cont()         { zeit = new Date(); ms = (zeit.getHours() * 24 * 6
 function display_msg(msg1)     { chatbox.value = msg1.trim(); }
 function keyup(arg1)         { if (arg1 == 13) submit_msg(); }
 function submit_msg()         { clearTimeout(intUpdate); if (nickname.value == "") { check = prompt("please enter username:"); if (check === null) return 0; if (check == "") check="..."; nickname.value=check; } if (nickname.value.length > nick_maxlength) nickname.value=nickname.value.substring(0,nick_maxlength); spaces=""; for(i=0;i<(nick_maxlength-nickname.value.length);i++) spaces+=" "; v=chatbox.value.substring(chatbox.value.indexOf("\n")) + "\n" + nickname.value + spaces + "| " + message.value; if (message.value != "") chatbox.value=v.substring(1); write_msg(message.value,nickname.value); message.value=""; intUpdate=window.setTimeout("read_cont();", waittime);}
-function write_msg(msg1,nick1)     { ajax_request("w.php?m=" + escape(msg1) + "&n=" + escape(nick1)); }
+function write_msg(msg1,nick1)     { ajax_request("process.php?m=" + escape(msg1) + "&n=" + escape(nick1)); }
 function rec_response(str1)     { }
 function rec_chatcontent(cont1) {
     if (cont1 != "") {
