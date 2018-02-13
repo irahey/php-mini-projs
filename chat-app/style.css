@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta+Mahee|Roboto+Mono');
+
+body { 
+    background-color: #d9d9d9;
+}
+
+border { 
+    padding-left:40px; 
+    font-family:arial;
+    background: #d9d9d9;
+}
+input, textarea  { 
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px; 
+}
+
+#content { 
+    width:800px; 
+    text-align:left;
+    margin-left:60px; 
+}
+#chatbox { 
+    border:1px solid #aaaaaa; 
+    padding:4px; 
+    background:#d9d9d9; 
+    color:white;
+}
+
+#nickname  { 
+    border: none; 
+    border-bottom:1px solid #aaaaaa; 
+    padding:4px; 
+    background:#d9d9d9;
+}
+#message { 
+    border: 1px 1px 1px 1px solid #aaaaaa; 
+    padding:4px; 
+    background:#d9d9d9; 
+}
+#info { 
+    text-align:left; 
+    padding-left:0px; 
+
+    margin: 20px 0 0 20px;
+    font-family: 'Mukta Mahee', sans-serif;
+
+}
+
+#info a { 
+    text-decoration:none; 
+    color:#4d4d4d; 
+    font-family:arial; 
+}
+#info a:hover { 
+    text-decoration:underline;
+    color:#9d8134; 
+}

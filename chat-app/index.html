@@ -1,0 +1,26 @@
+
+<html>
+    <head>
+    <title>a simple ajax chatroom</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="info"> 
+        <h2>a simple ajax chatroom</h2>
+        <a href>credits/inspiration for this chatroom</a>
+         
+        </div>
+        <br>
+        <div id="content">
+            <textarea id="chatbox" rows="19" cols="95" readonly></textarea><br>
+
+            <input id="nickname" type="text" size="9" maxlength="10" placeholder="username">&nbsp;
+            <input id="message" type="text" size="80" maxlength="80"  onkeyup="keyup(event.keyCode);" placeholder="message">
+            <input type="button" value="add" onclick="submit_msg();" style="cursor:pointer;border:1px solid gray;"><br><br>
+        </div>
+
+    </body>
+</html>
+
+
