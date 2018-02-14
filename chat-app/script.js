@@ -1,4 +1,3 @@
-/* most simple ajax chat script (www.linuxuser.at) (GPLv2) */
 var nick_maxlength=10;
 var http_request=false;
 var http_request2=false;

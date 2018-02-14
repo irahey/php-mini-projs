@@ -1,8 +1,5 @@
 <?php
-    /**
-     * Author: chris at linuxuser.at
-     * Licence: MIT
-     */
+
     $fn = "chat.txt";
     $maxlines = 20;
     $nick_maxlength = 10;
